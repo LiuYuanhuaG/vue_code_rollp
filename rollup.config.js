@@ -14,7 +14,12 @@ export default {
     },
     Plugins: [
         babel({
-            exclude: 'node_modules/**' // 忽略node_modules之下文件
+            babelHelpers: 'bundled',
+            exclude: 'node_modules/**',
+            extensions: ['.js'],
+            presets: [
+                '@babel/preset-env',
+            ]
         }),
         serve({
             open: true,

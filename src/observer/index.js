@@ -43,7 +43,7 @@ Observer.prototype.walk = function (data) {
 */
 
 function observe(data) {
-    console.log(data, 'prototype');
+    // console.log(data, 'prototype');
     if (typeof data !== 'object' || data === null) return;
 
     // 当数据没有问题交由观察者进行观察
