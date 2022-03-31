@@ -12,14 +12,14 @@ export default {
         name: 'Vue', // 全局注册Vue
         sourcemap: true
     },
-    Plugins: [
+    plugins: [
         babel({
-            babelHelpers: 'bundled',
+            // babelHelpers: 'bundled',
             exclude: 'node_modules/**',
-            extensions: ['.js'],
-            presets: [
-                '@babel/preset-env',
-            ]
+            // extensions: ['.js', 'index.js',],
+            // presets: [
+            //     '@babel/preset-env',
+            // ]
         }),
         serve({
             open: true,

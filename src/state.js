@@ -1,4 +1,4 @@
-import { observe } from './observer/index'
+import { observe } from './observer'
 import { proxyData } from './utils'
 
 function initState(vm) {
